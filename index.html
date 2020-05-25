@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .technicalText{
+        font-family: 'Roboto Mono', monospace;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <title>Emre Biçer</title>
+</head>
+
+<body>
+
+    <div id="mainDiv" class="container">
+        <h1 class=""> Emre Biçer </h1>
+        <h4> A senior computer engineering student </h4>
+
+        <ul class="collapsible popout" style="margin-top:30px">
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons">info</i>About me</div>
+                <div class="collapsible-body" style="font-family: 'DM Mono', monospace;">
+                    <h6>
+                        <span>I am fascinated by electronic devices, specifically computers.
+                             My focus area is on software development and I have experience
+                              with web development, mobile development, and machine learning
+                               related projects. I am studying in Turkey and planning to graduate
+                                in September 2020.
+                        </span>
+                    </h6>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">memory</i>Technical skills</div>
+                <div class="collapsible-body">
+                    <h5>
+                        <span>Programming languages</span>                
+                    </h5>
+                    <span class="technicalText"> Python, JavaScript, Java, Swift, C#, C, R</span>
+                    <h5>
+                        <span>Frameworks</span>                
+                    </h5>
+                    <span class="technicalText"> Tensorflow, Keras, NodeJS, Django, jQuery, React, React-Native, socket-io,
+                        Swift-UI
+                    </span>
+                    <h5>
+                        <span>Others</span>                
+                    </h5>
+                    <span class="technicalText"> Linux, Parallel programming, Asynchronous programming
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">apps</i>Projects</div>
+                <div class="collapsible-body">
+                    <span style="font-family: 'DM Mono', monospace;">Here are some of the projects
+                         that I have contributed
+                    </span>
+                    <h5>
+                        <span>Torch</span>                
+                    </h5>
+                    <span class="technicalText"> The aim of the project Torch is to make 
+                        the visually impaired people's lives easier. The core of the project
+                        is an API that can be accessed over HTTPS. This API serves functionalities
+                        that are powered with machine learning techniques such as CNN's k-NN's
+                        etc. Some example functionalities are; banknote-detection, ocr, 
+                        color-detection and object-detection. All of these services are accepting
+                        an image input. An example Django server that serves this API and an example
+                        PWA project was also developed. This project is soon to be published and 
+                        repositories will be available to the public.
+                    </span>
+                    <h5>
+                        <span>LockerApp</span>                
+                    </h5>
+                    <span class="technicalText"> LockerApp is a password manager. The application encrypts
+                        the passwords before saving them to an online database. It is developed with React-Native
+                        for the mobile and with NodeJS, jQuery for the web.
+                         It can be accessed at 
+                        <a href="http://lockerapp.me" target="LockerApp" rel="noopener noreferrer">web</a> or 
+                        <a href="https://play.google.com/store/apps/details?id=com.lockerapp" 
+                        target="LockerApp - Google Play Store" rel="noopener noreferrer">Google Play Store</a>.
+                    </span>
+
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <script>
+        M.AutoInit();
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems, options);
+        });
+    </script>
+</body>
+
+</html>

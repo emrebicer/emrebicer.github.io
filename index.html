@@ -2,8 +2,57 @@
 <html lang="en">
 
 <style>
-    .technicalText{
+    body {
+        background-color: #f9fbe7;
+        transition: background-color 1s;
+    }
+
+    .primaryBackground{
+        color: black;
+        background-color: none;
+        transition: background-color 1s;
+    }
+
+    .technicalText {
         font-family: 'Roboto Mono', monospace;
+    }
+
+    .smallImage {
+        width: 3rem;
+        height: auto;
+    }
+
+
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            color: #fafafa;
+            background-color: #212121 ;
+            transition: background-color 1s;
+        }
+
+        .primaryBackground {
+            color: #fafafa;
+            background-color: #212121  !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background-color 1s;
+        }
+
+        a {
+            /*
+            text-decoration: underline !important;
+            color: #ffea00 !important;
+            */
+        }
+
+        .smallImage {
+            width: 3rem;
+            height: auto;
+            background-color: #e0e0e0     ;
+            border: 2px solid #e0e0e0     ;
+            border-radius: 2rem;
+            /*make it circulat with materialize and find circular linkedin and email photos?*/
+        }
     }
 </style>
 
@@ -18,85 +67,120 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&family=Roboto+Mono:ital@1&display=swap"
+        rel="stylesheet">
     <title>Emre Biçer</title>
 </head>
 
-<body>
+<body class="">
 
     <div id="mainDiv" class="container">
-        <h1 class=""> Emre Biçer </h1>
+
+        <!-- Looks like I can't change the prefers-color-scheme with js, there are hacky ways but lets
+        just leave it like that for now
+        <div class="fixed-action-btn">
+            <a onclick="toggleDarkTheme();" class="btn-floating btn-large grey darken-4 waves-effect waves-light ">
+                <i class="large material-icons">brightness_medium</i>
+            </a>
+        </div>
+        -->
+        <h1> Emre Biçer </h1>
+
         <h4> A senior computer engineering student </h4>
 
-        <ul class="collapsible popout" style="margin-top:30px">
+        <ul class="collapsible popout" style="margin-top:30px; margin-bottom: 30px;">
             <li class="active">
-                <div class="collapsible-header"><i class="material-icons">info</i>About me</div>
+                <div class="collapsible-header primaryBackground"><i class="material-icons">info</i>About me</div>
                 <div class="collapsible-body" style="font-family: 'DM Mono', monospace;">
                     <h6>
-                        <span>I am fascinated by electronic devices, specifically computers.
-                             My focus area is on software development and I have experience
-                              with web development, mobile development, and machine learning
-                               related projects. I am studying in Turkey and planning to graduate
-                                in September 2020.
+                        <span>I am fascinated by electronic devices, especially computers.
+                            My focus area is on software development and I have experience
+                            with web development, mobile development, and machine learning
+                            related projects. I am studying in Turkey and planning to graduate
+                            in September 2020.
                         </span>
                     </h6>
                 </div>
             </li>
             <li>
-                <div class="collapsible-header"><i class="material-icons">memory</i>Technical skills</div>
+                <div class="collapsible-header primaryBackground"><i class="material-icons">memory</i>Technical skills
+                </div>
                 <div class="collapsible-body">
                     <h5>
-                        <span>Programming languages</span>                
+                        <span>Programming languages</span>
                     </h5>
                     <span class="technicalText"> Python, JavaScript, Java, Swift, C#, C, R</span>
                     <h5>
-                        <span>Frameworks</span>                
+                        <span>Frameworks</span>
                     </h5>
-                    <span class="technicalText"> Tensorflow, Keras, NodeJS, Django, jQuery, React, React-Native, socket-io,
+                    <span class="technicalText"> Tensorflow, Keras, NodeJS, Django, jQuery, React, React-Native,
+                        socket-io,
                         Swift-UI
                     </span>
                     <h5>
-                        <span>Others</span>                
+                        <span>Others</span>
                     </h5>
                     <span class="technicalText"> Linux, Parallel programming, Asynchronous programming
                     </span>
                 </div>
             </li>
             <li>
-                <div class="collapsible-header"><i class="material-icons">apps</i>Projects</div>
+                <div class="collapsible-header primaryBackground"><i class="material-icons">apps</i>Projects</div>
                 <div class="collapsible-body">
                     <span style="font-family: 'DM Mono', monospace;">Here are some of the projects
-                         that I have contributed
+                        that I have contributed
                     </span>
                     <h5>
-                        <span>Torch</span>                
+                        <span>Torch</span>
                     </h5>
-                    <span class="technicalText"> The aim of the project Torch is to make 
+                    <span class="technicalText"> The aim of the project Torch is to make
                         the visually impaired people's lives easier. The core of the project
-                        is an API that can be accessed over HTTPS. This API serves functionalities
+                        is an API that can be accessed over HTTP. This API serves functionalities
                         that are powered with machine learning techniques such as CNN's k-NN's
-                        etc. Some example functionalities are; banknote-detection, ocr, 
+                        etc. Some example functionalities are; Turkish banknote-detection, ocr,
                         color-detection and object-detection. All of these services are accepting
                         an image input. An example Django server that serves this API and an example
-                        PWA project was also developed. This project is soon to be published and 
+                        PWA project was also developed. This project is soon to be published and
                         repositories will be available to the public.
                     </span>
                     <h5>
-                        <span>LockerApp</span>                
+                        <span>LockerApp</span>
                     </h5>
                     <span class="technicalText"> LockerApp is a password manager. The application encrypts
                         the passwords before saving them to an online database. It is developed with React-Native
                         for the mobile and with NodeJS, jQuery for the web.
-                         It can be accessed at 
-                        <a href="http://lockerapp.me" target="LockerApp" rel="noopener noreferrer">web</a> or 
-                        <a href="https://play.google.com/store/apps/details?id=com.lockerapp" 
-                        target="LockerApp - Google Play Store" rel="noopener noreferrer">Google Play Store</a>.
+                        It can be accessed at
+                        <a href="http://lockerapp.me" target="_blank" rel="noopener noreferrer">web</a> or
+                        <a href="https://play.google.com/store/apps/details?id=com.lockerapp" target="_blank"
+                            rel="noopener noreferrer">Google Play Store</a>.
                     </span>
 
                 </div>
             </li>
         </ul>
 
+        <h3>Social links</h3>
+        <h5>You can check out my resume <a href="src/emrebicer_cv.pdf" target="_blank">here</a></h5>
+        <div class="row center" style="padding:1rem;">
+            <div class="col">
+                <a href="mailto:emreee.bicer@gmail.com">
+                    <img href="#" src="src/email_icon.png" class="smallImage">
+                    </img>
+                </a>
+            </div>
+            <div class="col">
+                <a href="http://github.com/emrebicer" target="_blank">
+                    <img href="#" src="src/github_icon.png" class="smallImage">
+                    </img>
+                </a>
+            </div>
+            <div class="col">
+                <a href="http://linkedin.com/in/-emrebicer" target="_blank">
+                    <img href="#" src="src/linkedin_icon.png" class="smallImage">
+                    </img>
+                </a>
+            </div>
+        </div>
     </div>
 
 
@@ -105,8 +189,12 @@
         M.AutoInit();
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.collapsible');
-            var instances = M.Collapsible.init(elems, options);
+            var instances = M.Collapsible.init(elems, {});
         });
+
+        function toggleDarkTheme(){
+
+        }
     </script>
 </body>
 

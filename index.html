@@ -7,6 +7,10 @@
         transition: background-color 1s;
     }
 
+    a:hover{
+            text-decoration: underline !important;
+    }
+
     .primaryBackground{
         color: black;
         background-color: none;
@@ -17,12 +21,24 @@
         font-family: 'Roboto Mono', monospace;
     }
 
-    .smallImage {
-        width: 3rem;
-        height: auto;
+    .fontIcon{
+        width: 50px;
+        height: 50px;
+        background: #f1f1f1;
+        margin: 4px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: rgba(0,0,0,0.87);
+        overflow: hidden;
+        line-height: 50px !important;
+        font-size: 26px;
+        transition: 0.4s;
     }
 
-
+    .fontIcon:hover{
+        transform:scale(1.1);
+        color: #039be5;
+    }
 
     @media (prefers-color-scheme: dark) {
         body {
@@ -39,11 +55,7 @@
         }
 
         a {
-            
-            /*text-decoration: underline !important;*/
-            color: #d32f2f !important;
-
-            
+            color: #d32f2f !important;   
         }
 
         .smallImage {
@@ -54,6 +66,18 @@
             border-radius: 2rem;
             /*make it circulat with materialize and find circular linkedin and email photos?*/
         }
+
+        .fontIcon{          
+            background: #e0e0e0    ;
+            box-shadow: 0 5px 15px -5px #00000070;
+            color: #311b92    ;
+            
+        }
+
+        .fontIcon:hover{
+            color: black  ;
+        }
+
     }
 </style>
 
@@ -70,6 +94,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&family=Roboto+Mono:ital@1&display=swap"
         rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a6d5451407.js" crossorigin="anonymous"></script>
+
     <title>Emre Biçer</title>
 </head>
 
@@ -163,24 +190,21 @@
             </li>
         </ul>
 
-        <h3>Social links</h3>
-        <div class="row center" style="padding:1rem;">
-            <div class="col">
-                <a href="mailto:emreee.bicer@gmail.com">
-                    <img href="#" src="src/email_icon.png" class="smallImage">
-                    </img>
+        <h4>Social links</h4>
+        <div class="row center" style="padding:1rem; margin-bottom: 50px;">
+            <div class="col s4 m1">
+                <a class="tooltipped" data-position="bottom" data-tooltip="E-mail" href="mailto:emreee.bicer@gmail.com">
+                    <i class="far fa-envelope fontIcon"></i>
                 </a>
             </div>
-            <div class="col">
-                <a href="http://github.com/emrebicer" target="_blank">
-                    <img href="#" src="src/github_icon.png" class="smallImage">
-                    </img>
+            <div class="col s4 m1">
+                <a class="tooltipped" data-position="bottom" data-tooltip="GitHub" href="http://github.com/emrebicer" target="_blank">
+                    <i class="fab fa-github fontIcon"></i>
                 </a>
             </div>
-            <div class="col">
-                <a href="http://linkedin.com/in/-emrebicer" target="_blank">
-                    <img href="#" src="src/linkedin_icon.png" class="smallImage">
-                    </img>
+            <div class="col s4 m1">
+                <a class="tooltipped" data-position="bottom" data-tooltip="LinkedIn" href="http://linkedin.com/in/-emrebicer" target="_blank">
+                    <i class="fab fa-linkedin fontIcon"></i>
                 </a>
             </div>
         </div>

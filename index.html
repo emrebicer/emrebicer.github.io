@@ -7,11 +7,16 @@
         transition: background-color 1s;
     }
 
-    a:hover{
-            text-decoration: underline !important;
+    .bulletli{
+        list-style-type: disc !important;
+        margin-left: 30px;
     }
 
-    .primaryBackground{
+    a:hover {
+        text-decoration: underline !important;
+    }
+
+    .primaryBackground {
         color: black;
         background-color: none;
         transition: background-color 1s;
@@ -21,41 +26,41 @@
         font-family: 'Roboto Mono', monospace;
     }
 
-    .fontIcon{
+    .fontIcon {
         width: 50px;
         height: 50px;
         background: #f1f1f1;
         margin: 4px;
         border-radius: 30%;
         box-shadow: 0 5px 15px -5px #00000070;
-        color: rgba(0,0,0,0.87);
+        color: rgba(0, 0, 0, 0.87);
         overflow: hidden;
         line-height: 50px !important;
         font-size: 26px;
         transition: 0.4s;
     }
 
-    .fontIcon:hover{
-        transform:scale(1.1);
+    .fontIcon:hover {
+        transform: scale(1.1);
         color: #039be5;
     }
 
     @media (prefers-color-scheme: dark) {
         body {
-            color: #f5f5f5     ;
+            color: #f5f5f5;
             background-color: #311b92;
             transition: background-color 1s;
         }
 
         .primaryBackground {
-            color: #f5f5f5     ;
+            color: #f5f5f5;
             background-color: #311b92 !important;
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: background-color 1s;
         }
 
         a {
-            color: #d32f2f !important;   
+            color: #d32f2f !important;
         }
 
         .smallImage {
@@ -67,15 +72,15 @@
             /*make it circulat with materialize and find circular linkedin and email photos?*/
         }
 
-        .fontIcon{          
-            background: #e0e0e0    ;
+        .fontIcon {
+            background: #e0e0e0;
             box-shadow: 0 5px 15px -5px #00000070;
-            color: #311b92    ;
-            
+            color: #311b92;
+
         }
 
-        .fontIcon:hover{
-            color: black  ;
+        .fontIcon:hover {
+            color: black;
         }
 
     }
@@ -115,7 +120,7 @@
         <h1 class="hide-on-small-only"> Emre Biçer </h1>
         <h1 class="show-on-small hide-on-med-and-up center-align"> Emre Biçer </h1>
 
-        <h4 class="hide-on-small-only"> A senior computer engineering student </h4>
+        <h4 class="hide-on-small-only"> A software engineer </h4>
         <h4 class="show-on-small hide-on-med-and-up center-align"> A senior computer engineering student </h4>
 
         <ul class="collapsible popout" style="margin-top:30px; margin-bottom: 30px;">
@@ -126,8 +131,9 @@
                         <span>I am fascinated by electronic devices, especially computers.
                             My focus area is on software development and I have experience
                             with web development, mobile development, and machine learning
-                            related projects. I am studying in Turkey and planning to graduate
-                            in September 2020.
+                            related projects. Currently, working as a software engineer
+                            in Turkey at Logo Yazılım and helping my team maintain/develop
+                            web based HR software projects.
                         </span>
                         <blockquote style="border-color: #ef5350 ;">
                             You can check out my resume <a href="src/emrebicer_cv.pdf" target="_blank">here</a>
@@ -142,13 +148,14 @@
                     <h5>
                         <span>Programming languages</span>
                     </h5>
-                    <span class="technicalText"> Python, JavaScript, Java, Swift, C#, C, R</span>
+                    <span class="technicalText"> JavaScript, Python, Java, Swift, C#, C++, C, R</span>
                     <h5>
-                        <span>Frameworks</span>
+                        <span>Tech Stack</span>
                     </h5>
-                    <span class="technicalText"> Tensorflow, Keras, NodeJS, Django, jQuery, React, React-Native,
+                    <span class="technicalText">  NodeJS, Django, Tensorflow, Keras, jQuery, React, React-Native,
                         socket-io,
-                        Swift-UI
+                        Swift-UI,
+                        VueJS
                     </span>
                     <h5>
                         <span>Others</span>
@@ -161,7 +168,7 @@
                 <div class="collapsible-header primaryBackground"><i class="material-icons">apps</i>Projects</div>
                 <div class="collapsible-body">
                     <span style="font-family: 'DM Mono', monospace;">Here are some of the projects
-                        that I have contributed
+                        that I have contributed/developed
                     </span>
                     <h5>
                         <span>Torch</span>
@@ -173,9 +180,14 @@
                         etc. Some example functionalities are; Turkish banknote-detection, ocr,
                         color-detection and object-detection. All of these services are accepting
                         an image input. An example Django server that serves this API and an example
-                        PWA project was also developed. This project is soon to be published and
-                        repositories will be available to the public.
+                        PWA project was also developed.
+                        <ul style="margin-top: 12px;">
+                            <li class="bulletli"><a href="https://github.com/omothm/torch-api" target="_blank" rel="noopener noreferrer">Torch API Repository</a></li>
+                            <li class="bulletli"><a href="https://github.com/omothm/torch-server" target="_blank" rel="noopener noreferrer">Torch Server Repository</a>                        </li>
+                            <li class="bulletli"><a href="https://drive.google.com/file/d/1hKsst_on3_Uvgd6658VVxZMPN10GBxrk/view" target="_blank" rel="noopener noreferrer">Project Report</a></li>
+                        </ul>
                     </span>
+                    
                     <h5>
                         <span>LockerApp</span>
                     </h5>
@@ -194,7 +206,7 @@
 
         <h4 class="hide-on-small-only"> Social links </h4>
         <h4 class="show-on-small hide-on-med-and-up center-align"> Social links </h4>
-        
+
         <div class="row center" style="padding:1rem; margin-bottom: 50px;">
             <div class="col s4 m2 l1">
                 <a class="tooltipped" data-position="bottom" data-tooltip="E-mail" href="mailto:oebicer@gmail.com">
@@ -202,12 +214,14 @@
                 </a>
             </div>
             <div class="col s4 m2 l1">
-                <a class="tooltipped" data-position="bottom" data-tooltip="GitHub" href="http://github.com/emrebicer" target="_blank">
+                <a class="tooltipped" data-position="bottom" data-tooltip="GitHub" href="http://github.com/emrebicer"
+                    target="_blank">
                     <i class="fab fa-github fontIcon"></i>
                 </a>
             </div>
             <div class="col s4 m2 l1">
-                <a class="tooltipped" data-position="bottom" data-tooltip="LinkedIn" href="http://linkedin.com/in/biceremre" target="_blank">
+                <a class="tooltipped" data-position="bottom" data-tooltip="LinkedIn"
+                    href="http://linkedin.com/in/biceremre" target="_blank">
                     <i class="fab fa-linkedin fontIcon"></i>
                 </a>
             </div>
@@ -223,7 +237,7 @@
             var instances = M.Collapsible.init(elems, {});
         });
 
-        function toggleDarkTheme(){
+        function toggleDarkTheme() {
 
         }
     </script>

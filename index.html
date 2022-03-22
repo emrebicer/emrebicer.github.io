@@ -1,250 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-    body {
-        background-color: #f9fbe7;
-        transition: background-color 1s;
-    }
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
 
-    .bulletli{
-        list-style-type: disc !important;
-        margin-left: 30px;
-    }
-
-    a:hover {
-        text-decoration: underline !important;
-    }
-
-    .primaryBackground {
-        color: black;
-        background-color: none;
-        transition: background-color 1s;
-    }
-
-    .technicalText {
-        font-family: 'Roboto Mono', monospace;
-    }
-
-    .fontIcon {
-        width: 50px;
-        height: 50px;
-        background: #f1f1f1;
-        margin: 4px;
-        border-radius: 30%;
-        box-shadow: 0 5px 15px -5px #00000070;
-        color: rgba(0, 0, 0, 0.87);
-        overflow: hidden;
-        line-height: 50px !important;
-        font-size: 26px;
-        transition: 0.4s;
-    }
-
-    .fontIcon:hover {
-        transform: scale(1.1);
-        color: #039be5;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        body {
-            color: #f5f5f5;
-            background-color: #311b92;
-            transition: background-color 1s;
-        }
-
-        .primaryBackground {
-            color: #f5f5f5;
-            background-color: #311b92 !important;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: background-color 1s;
-        }
-
-        a {
-            color: #d32f2f !important;
-        }
-
-        .smallImage {
-            width: 3rem;
-            height: auto;
-            background-color: #e0e0e0;
-            border: 2px solid #e0e0e0;
-            border-radius: 2rem;
-            /*make it circulat with materialize and find circular linkedin and email photos?*/
-        }
-
-        .fontIcon {
-            background: #e0e0e0;
-            box-shadow: 0 5px 15px -5px #00000070;
-            color: #311b92;
-
-        }
-
-        .fontIcon:hover {
-            color: black;
-        }
-
-    }
-</style>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&family=Roboto+Mono:ital@1&display=swap"
-        rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/a6d5451407.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a6d5451407.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Emre Biçer</title>
-</head>
+  </head>
 
-<body class="">
+  <body class="">
+    <main id="" class="container">
+      <h1 class="">Emre Biçer</h1>
+      <h3>About Me</h3>
+      <p>
+        I enjoy working with electronic devices, especially computers. My focus
+        area is on software development and I have experience with web
+        development, mobile development, and machine learning related projects.
+        Currently, I am studying towards my Master's degree at the Technical
+        University of Munich. My
+        <a href="src/emrebicer_cv.pdf" target="_blank">resume</a> is available
+        online.
+      </p>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>
+          <b> Programming Languages: </b>
+          <i>Python, Java, JavaScript, TypeScript, Go, Rust, C++, Swift, C#</i>
+        </li>
 
-    <div id="mainDiv" class="container">
+        <li>
+          <b> Technical Interests: </b>
+          <i>
+            Backend development, developer focused software (API, CLI etc.)
+          </i>
+        </li>
 
-        <!-- Looks like I can't change the prefers-color-scheme with js, there are hacky ways but lets
-        just leave it like that for now
-        <div class="fixed-action-btn">
-            <a onclick="toggleDarkTheme();" class="btn-floating btn-large grey darken-4 waves-effect waves-light ">
-                <i class="large material-icons">brightness_medium</i>
-            </a>
-        </div>
-        -->
-        <h1 class="hide-on-small-only"> Emre Biçer </h1>
-        <h1 class="show-on-small hide-on-med-and-up center-align"> Emre Biçer </h1>
+        <li>
+          <b> Others: </b>
 
-        <h4 class="hide-on-small-only"> A software engineer </h4>
-        <h4 class="show-on-small hide-on-med-and-up center-align"> A software engineer </h4>
+          <i> Jira, Git, SQL, NoSQL, Linux, Bash Script, Firebase, GCP </i>
+        </li>
+      </ul>
+      <h3>Projects</h3>
 
-        <ul class="collapsible popout" style="margin-top:30px; margin-bottom: 30px;">
-            <li class="active">
-                <div class="collapsible-header primaryBackground"><i class="material-icons">info</i>About me</div>
-                <div class="collapsible-body" style="font-family: 'DM Mono', monospace;">
-                    <h6>
-                        <span>I am fascinated by electronic devices, especially computers.
-                            My focus area is on software development and I have experience
-                            with web development, mobile development, and machine learning
-                            related projects. Currently, I am studying towards my Master's degree
-                            at Technical University of Munich.
-                        </span>
-                        <blockquote style="border-color: #ef5350 ;">
-                            You can check out my resume <a href="src/emrebicer_cv.pdf" target="_blank">here</a>
-                        </blockquote>
-                    </h6>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header primaryBackground"><i class="material-icons">memory</i>Technical skills
-                </div>
-                <div class="collapsible-body">
-                    <h5>
-                        <span>Programming languages</span>
-                    </h5>
-                    <span class="technicalText"> Python, Java, JavaScript, TypeScript, Go, Rust, C++, Swift, C# </span>
-                    <h5>
-                        <span>Technical Interests</span>
-                    </h5>
-                    <span class="technicalText"> Backend development, developer focused software (API, CLI etc.), computer vision                    </span>
-                    <h5>
-                        <span>Others</span>
-                    </h5>
-                    <span class="technicalText"> Jira, Git, SQL, NoSQL, Linux, Bash Script, Firebase, GCP                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header primaryBackground"><i class="material-icons">apps</i>Projects</div>
-                <div class="collapsible-body">
-                    <span style="font-family: 'DM Mono', monospace;">Here are some of the projects
-                        that I have contributed/developed
-                    </span>
-                    <h5>
-                        <span>Torch</span>
-                    </h5>
-                    <span class="technicalText"> The aim of the project Torch is to make
-                        the visually impaired people's lives easier. The core of the project
-                        is an API that can be accessed over HTTP. This API serves functionalities
-                        that are powered with machine learning techniques such as CNN's k-NN's
-                        etc. Some example functionalities are; Turkish banknote-detection, ocr,
-                        color-detection and object-detection. All of these services are accepting
-                        an image input. An example Django server that serves this API and an example
-                        PWA project was also developed.
-                        <ul style="margin-top: 12px;">
-                            <li class="bulletli"><a href="https://github.com/omothm/torch-api" target="_blank" rel="noopener noreferrer">Torch API Repository</a></li>
-                            <li class="bulletli"><a href="https://github.com/omothm/torch-server" target="_blank" rel="noopener noreferrer">Torch Server Repository</a>                        </li>
-                            <li class="bulletli"><a href="https://drive.google.com/file/d/1hKsst_on3_Uvgd6658VVxZMPN10GBxrk/view" target="_blank" rel="noopener noreferrer">Project Report</a></li>
-                        </ul>
-                    </span>
-                    
-                    <h5>
-                        <span>LockerApp - Password Manager</span>
-                    </h5>
-                    <span class="technicalText"> LockerApp is a password manager. The application encrypts
-                        the passwords before saving them to an online database. It is developed with Flutter
-                        for the mobile and with NodeJS, VueJS for the web.
-                        It can be accessed at
-                        <a href="http://lockerapp.me" target="_blank" rel="noopener noreferrer">web</a> or
-                        <a href="https://play.google.com/store/apps/details?id=com.lockerapp" target="_blank"
-                            rel="noopener noreferrer">Google Play Store</a>.
-                    </span>
-                    <h5>
-                        <span>Trader - A Cryptocurrency Trader Bot</span>
-                    </h5>
-                    <span class="technicalText"> 
-                        Trader is a real-time cryptocurrency trader bot. It constantly looks up certain indicators and buys/sells cryptocurrencies accordingly. It also implements a Python wrapper for some of the important Binance Rest API endpoints. It is and open source project and the repository can be accessed over GitHub.
-
-                        <ul style="margin-top: 12px;">
-                            <li class="bulletli"><a href="https://github.com/emrebicer/trader" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-                        </ul>
-                    </span>
-
-                </div>
-            </li>
+      <p>These are some of the projects that I have contributed / developed;</p>
+      <ul>
+        <li><b> Torch </b></li>
+        <p>
+          The aim of the project Torch is to make visually impaired people's
+          lives easier. The core of the project is an API that can be accessed
+          over HTTP. This API serves functionalities that are powered with
+          machine learning techniques such as CNN's k-NN's etc. Some example
+          functionalities are; Turkish banknote-detection, ocr, color-detection
+          and object-detection. All of these services are accepting image input.
+          An example Django server that serves this API and an example PWA
+          project was also developed.
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/omothm/torch-api"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Torch API Repository</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/omothm/torch-server"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Torch Server Repository</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1hKsst_on3_Uvgd6658VVxZMPN10GBxrk/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Project Report</a
+            >
+          </li>
         </ul>
 
-        <h4 class="hide-on-small-only"> Social links </h4>
-        <h4 class="show-on-small hide-on-med-and-up center-align"> Social links </h4>
+        <li><b> LockerApp - Password Manager</b></li>
+        <p>
+          LockerApp is a password manager. The application encrypts the
+          passwords before saving them to an online database. It is developed
+          with Flutter for the mobile and with NodeJS, VueJS for the web. It can
+          be accessed on the
+          <a
+            href="http://lockerapp.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            >web</a
+          >
+          or
+          <a
+            href="https://play.google.com/store/apps/details?id=com.lockerapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google Play Store</a
+          >.
+        </p>
 
-        <div class="row center" style="padding:1rem; margin-bottom: 50px;">
-            <div class="col s4 m2 l1">
-                <a class="tooltipped" data-position="bottom" data-tooltip="E-mail" href="mailto:oebicer@gmail.com">
-                    <i class="far fa-envelope fontIcon"></i>
-                </a>
-            </div>
-            <div class="col s4 m2 l1">
-                <a class="tooltipped" data-position="bottom" data-tooltip="GitHub" href="http://github.com/emrebicer"
-                    target="_blank">
-                    <i class="fab fa-github fontIcon"></i>
-                </a>
-            </div>
-            <div class="col s4 m2 l1">
-                <a class="tooltipped" data-position="bottom" data-tooltip="LinkedIn"
-                    href="http://linkedin.com/in/biceremre" target="_blank">
-                    <i class="fab fa-linkedin fontIcon"></i>
-                </a>
-            </div>
+        <li><b> Trader - A Cryptocurrency Trader Bot</b></li>
+        <p>
+          Trader is a real-time cryptocurrency trader bot. It constantly looks
+          up certain indicators and buys / sells cryptocurrencies accordingly.
+          It also implements a Python wrapper for some of the important Binance
+          Rest API endpoints. It is an open-source project and the repository
+          can be accessed at
+          <a
+            href="https://github.com/emrebicer/trader"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >.
+        </p>
+      </ul>
+
+      <h3>Social Links</h3>
+      <div class="grid">
+        <div>
+          <a
+            class="tooltipped"
+            data-position="bottom"
+            data-tooltip="E-mail"
+            href="mailto:oebicer@gmail.com"
+          >
+            <i class="fa-envelope"></i
+            ><span style="margin-left: 12px">oebicer@gmail.com</span>
+          </a>
         </div>
-    </div>
+        <div>
+          <a
+            class="tooltipped"
+            data-position="bottom"
+            data-tooltip="GitHub"
+            href="http://github.com/emrebicer"
+            target="_blank"
+          >
+            <i class="fa-github"></i>
+            <span style="margin-left: 8px">emrebicer</span>
+          </a>
+        </div>
+        <div>
+          <a
+            class="tooltipped"
+            data-position="bottom"
+            data-tooltip="LinkedIn"
+            href="http://linkedin.com/in/biceremre"
+            target="_blank"
+          >
+            <i class="fa-linkedin"></i>
+            <span style="margin-left: 8px">biceremre</span>
+          </a>
+        </div>
+      </div>
+    </main>
 
-
-
-    <script>
-        M.AutoInit();
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.collapsible');
-            var instances = M.Collapsible.init(elems, {});
-        });
-
-        function toggleDarkTheme() {
-
-        }
-    </script>
-</body>
-
+    <script></script>
+  </body>
 </html>

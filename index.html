@@ -1,221 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/a6d5451407.js" crossorigin="anonymous"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a6d5451407.js" crossorigin="anonymous"></script>
 
-    <title>Emre Biçer</title>
-  </head>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
 
-  <body class="">
-    <main id="" class="container">
-      <h1 class="">Emre Biçer</h1>
-      <h3>About Me</h3>
+  <title>Emre Biçer</title>
+</head>
+
+<body class="">
+  <main id="" class="container">
+    <h1 class="">Emre Biçer</h1>
+    <h3>About Me</h3>
+    <p>
+      I enjoy working with electronic devices, especially computers. My focus
+      area is on software development and I am interested in <u>systems programming</u> and <u>backend development</u>
+      topics.
+      Currently, I am studying towards my Master's degree at the Technical
+      University of Munich and I plan to finish my studies at the end of April 2025.
+    </p>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>
+        <b> Programming Languages: </b>
+        <i>Rust, Python, JavaScript, Java, C#, C++</i>
+      </li>
+
+      <li>
+        <b> Technical Interests: </b>
+        <i>
+          Backend development, developer focused software (API, CLI etc.)
+        </i>
+      </li>
+
+      <li>
+        <b> Others: </b>
+
+        <i> Jira, Git, SQL, Databases, Linux, Bash Script, HTTP, MQTT, NatsIO</i>
+      </li>
+    </ul>
+    <h3>Experience</h3>
+    <ul>
+      <li><b>Motius, <i>Software Engineer - Working Student </i> <mark> Feb 2023 - Apr 2025</mark> </b></li>
       <p>
-        I enjoy working with electronic devices, especially computers. My focus
-        area is on software development and I am interested in <u>systems programming</u> and <u>backend development</u> topics.
-        Currently, I am studying towards my Master's degree at the Technical
-        University of Munich. My single page 
-        <a href="src/emrebicer_cv.pdf" target="_blank">resume</a> is available
-        online.
+        During my employment at Motius, I contributed to the development of multiple projects. The most impactful one
+        being an API-Gateway project, that elevates low-level APIs (e.g., CAN bus, SomeIP) to higher-level event-driven
+        APIs (e.g., MQTT, HTTP server-side-events) defined in AsyncAPI and OpenAPI standards. The gateway project is
+        written in Rust and developed for a leading automotive company. I was part of the development team where we
+        developed new features, fixed bugs, introduced unit and integration tests, and maintained CI/CD jobs on GitLab.
       </p>
-      <h3>Technical Skills</h3>
+      <p>
+        I have also contributed to other projects where I implemented an automated certificate signing process, which
+        involves multiple parties such as a remote signing server and local yubikey devices for secret and identity
+        validation. Additionally, I have implemented a backend and frontend for this signing station, making this
+        automated process accessible to workers without technical knowledge.
+      </p>
+      <li><b>Logo Yazilim, <i>Software Engineer </i> <mark> July 2020 - Aug 2021</mark> </b></li>
+      <p>
+        Worked with the LogoHR team for a year, helped my team maintain and improve web based HR projects with .NET MVC,
+        .Net Core and jQuery by following the scrum principles, used Jira for issue tracking and git for version
+        control. Automated manual CI/CD processes by writing a Python script and simplified the recurring tasks.
+        Introduced mobile cross platform solutions to my team and contributed to a mobile application written in React
+        Native.
+
+      </p>
+      <li><b>AirTies Wireless Networks, <i>Software Engineer Internship</i> <mark> July 2019 - Aug 2019</mark> </b></li>
+      <p>
+        Developed a software for access point devices to perform network traffic analysis using C and JavaScript.
+        Implemented the access point interface (that fetches real-time data) for web browsers. Wrote bash scripts to
+        gather and store data on a cloud database, using Linux. Learned about the TCP/IP and HTTP protocols to implement
+        a private messaging program. Conducted experiments to maximize data throughput of access point devices with
+        Python.
+      </p>
+    </ul>
+
+    <h3>Education</h3>
+    <ul>
+      <li><b>Technical University of Munich, <i>Computer Science M.Sc.</i> <mark> Oct 2021 - Apr 2025</mark> </b></li>
+      <p>
+        While studying at TUM, I got involved in multiple courses and topics that would focus on distributed systems,
+        cloud computing, and systems programming. My master's thesis focus is on improving the <a
+          href="https://github.com/maxi-k/btrblocks">BtrBlocks</a> interoperability with on-demand translation.
+        BtrBlocks is an efficient columnar compression format designed for high compression ratios and fast
+        decompression, enabling rapid data retrieval from remote storage in high-speed network environments. The
+        resulting <a href="https://github.com/emrebicer/btrblocks-rs">Rust library</a> achieves feature parity with the
+        original C++ library, supporting compression and decompression. A binary tool was also developed, offering
+        features such as CSV compression/decompression, mounting CSV files from remote BtrBlocks storage, on-demand CSV
+        translation, and SQL querying on compressed files.
+      </p>
+      <li><b>Dokuz Eylül University, <i>Computer Engineering B.Sc.</i> <mark> Sep 2016 - Oct 2020</mark> </b></li>
+      <p>
+        DEU is the place where I met with many software development topics, such as algorithms, algorithm analysis, data
+        structures, object oriented programming, network systems, operating systems and many more. During my time there,
+        I have been involved in 3 individual internships where I have had my first real time software development
+        experiences. My senior project is called <a href="https://github.com/omothm/torch-api">Torch</a> where we
+        developed multiple machine learning models that focuces on helping visually imparied people on day to day tasks.
+        The models were also exposed as a service over an HTTP api and the project was awarded with the special award of
+        Senior Projects / Open Source Software Category by <a href="https://gbyf.org.tr/">BMO</a>.
+      </p>
+    </ul>
+
+    <h3>Projects</h3>
+
+    <p>These are some of the projects that I have contributed / developed;</p>
+    <ul>
+
+
+      <li><b> Mouce - Cross Platform Mouse Library</b></li>
+      <p>
+        Mouce is a library written in Rust that aims to help simulating and listening mouse actions across different
+        platforms. It makes use of several system libraries like Win32, CoreGraphics & CoreFoundation, X11, and uinput
+        to create an interface to simulate mouse movements/clicks. The project also offers a functionality to listen the
+        mouse movements and actions. It supports major operating systems like Windows, MacOS, Linux X11 and partially
+        Linux Wayland as well (See github readme for details). The project has an MIT license and can be accessed at
+        <a href="https://github.com/emrebicer/mouce" target="_blank" rel="noopener noreferrer">GitHub</a> or
+        <a href="https://crates.io/crates/mouce" target="_blank" rel="noopener noreferrer">crates.io</a>
+        .
+
+
+        <li><b> BtrBlocks - Rust Library </b></li>
+      <p>
+        BtrBlocks is an efficient columnar compression format designed for high compression ratios and fast
+        decompression. It is originally written in C++, and my master's thesis focused on making it accessible in the
+        Rust ecosystem while providing feature parity and offering additional features.
+      </p>
       <ul>
         <li>
-          <b> Programming Languages: </b>
-          <i>Python, Java, Rust, JavaScript, TypeScript, Go, C++, Swift, C#</i>
+          <a href="https://github.com/maxi-k/btrblocks" target="_blank" rel="noopener noreferrer">Original BtrBlocks C++
+            Repository</a>
         </li>
-
         <li>
-          <b> Technical Interests: </b>
-          <i>
-            Backend development, developer focused software (API, CLI etc.)
-          </i>
+          <a href="https://github.com/emrebicer/btrblocks-rs" target="_blank" rel="noopener noreferrer">BtrBlocks Rust
+            Library Repository</a>
         </li>
+      </ul>
 
+
+
+
+
+
+
+
+
+
+
+      <li><b> Torch </b></li>
+      <p>
+        The aim of the project Torch is to make visually impaired people's
+        lives easier. The core of the project is an API that can be accessed
+        over HTTP. This API serves functionalities that are powered with
+        machine learning techniques such as CNN's k-NN's etc. Some example
+        functionalities are; Turkish banknote-detection, ocr, color-detection
+        and object-detection. All of these services are accepting image input.
+        An example Django server that serves this API and an example PWA
+        project was also developed.
+      </p>
+      <ul>
         <li>
-          <b> Others: </b>
-
-          <i> Jira, Git, SQL, NoSQL, Linux, Bash Script, Firebase, GCP </i>
+          <a href="https://github.com/omothm/torch-api" target="_blank" rel="noopener noreferrer">Torch API
+            Repository</a>
+        </li>
+        <li>
+          <a href="https://github.com/omothm/torch-server" target="_blank" rel="noopener noreferrer">Torch Server
+            Repository</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1hKsst_on3_Uvgd6658VVxZMPN10GBxrk/view" target="_blank"
+            rel="noopener noreferrer">Project Report</a>
         </li>
       </ul>
-      <h3>Projects</h3>
 
-      <p>These are some of the projects that I have contributed / developed;</p>
-      <ul>
+      <li><b> LockerApp - Password Manager</b></li>
+      <p>
+        LockerApp is a password manager. The application encrypts the
+        passwords before saving them to an online database. It is developed
+        with Flutter for the mobile and with NodeJS, VueJS for the web. It can
+        be accessed on the
+        <a href="http://lockerapp.me" target="_blank" rel="noopener noreferrer">web</a>
+        or
+        <a href="https://play.google.com/store/apps/details?id=com.lockerapp" target="_blank"
+          rel="noopener noreferrer">Google Play Store</a>.
+      </p>
 
-
-        <li><b> Mouce - Cross Platform Mouse Library</b></li>
-        <p>
-          Mouce is a library written in Rust that aims to help simulating and listening mouse actions across different platforms. It makes use of several system libraries like Win32, CoreGraphics & CoreFoundation, X11, and uinput to create an interface to simulate mouse movements/clicks. The project also offers a functionality to listen the mouse movements and actions. It supports major operating systems like Windows, MacOS, Linux X11 and partially Linux Wayland as well (See github readme for details). The project has an MIT license and can be accessed at 
-            <a
-              href="https://github.com/emrebicer/mouce"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            > or 
-            <a
-              href="https://crates.io/crates/mouce"
-              target="_blank"
-              rel="noopener noreferrer"
-              >crates.io</a
-            > 
-            .
-
-        <li><b> Torch </b></li>
-        <p>
-          The aim of the project Torch is to make visually impaired people's
-          lives easier. The core of the project is an API that can be accessed
-          over HTTP. This API serves functionalities that are powered with
-          machine learning techniques such as CNN's k-NN's etc. Some example
-          functionalities are; Turkish banknote-detection, ocr, color-detection
-          and object-detection. All of these services are accepting image input.
-          An example Django server that serves this API and an example PWA
-          project was also developed.
-        </p>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/omothm/torch-api"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Torch API Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/omothm/torch-server"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Torch Server Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1hKsst_on3_Uvgd6658VVxZMPN10GBxrk/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Project Report</a
-            >
-          </li>
-        </ul>
-
-        <li><b> LockerApp - Password Manager</b></li>
-        <p>
-          LockerApp is a password manager. The application encrypts the
-          passwords before saving them to an online database. It is developed
-          with Flutter for the mobile and with NodeJS, VueJS for the web. It can
-          be accessed on the
-          <a
-            href="http://lockerapp.me"
-            target="_blank"
-            rel="noopener noreferrer"
-            >web</a
-          >
-          or
-          <a
-            href="https://play.google.com/store/apps/details?id=com.lockerapp"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Google Play Store</a
-          >.
-        </p>
-
-        <li><b> Trader - A Cryptocurrency Trader Bot</b></li>
-        <p>
-          Trader is a real-time cryptocurrency trader bot. It constantly looks
-          up certain indicators and buys / sells cryptocurrencies accordingly.
-          It also implements a Python wrapper for some of the important Binance
-          Rest API endpoints. It is an open-source project and the repository
-          can be accessed at
-          <a
-            href="https://github.com/emrebicer/trader"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >.
-        </p>
-      </ul>
-
-      <h3>Experience</h3>
-      <ul>
-        <li><b>Motius, <i>Software Engineer - Working Student </i> <mark> Feb 2023 - Present </mark> </b></li>
-        <p>
-        During my employement at motius I contributed to the development of an API-Gateway project, that elevates low-level APIs (e.g. CAN bus, SomeIP) tohigher level event-driven APIs (e.g. MQTT, HTTP server-side-events) defined in AsyncAPI and OpenAPI standards. Gateway project is written in Rust, and I am part of the development team where we develop new features, fix bugs, introduce unit and integration tests, and maintain CI/CD jobs on GitLab.
-        </p>
-        <li><b>Logo Yazilim, <i>Software Engineer </i> <mark> July 2020 - Aug 2021</mark> </b></li>
-        <p>
-        Worked with the LogoHR team for a year, helped my team maintain and improve web based HR projects with .NET MVC, .Net Core and jQuery by following the scrum principles, used Jira for issue tracking and git for version control. Automated manual CI/CD processes by writing a Python script and simplified the recurring tasks. Introduced mobile cross platform solutions to my team and contributed to a mobile application written in React Native. Before my full time employement, I worked as an intern with the Logo Retail team for a month, resolved bugs on the cloud based projects using C# and TS.
-        </p>
-        <li><b>DEU Computer Engineering, <i>Hardware Engineer Internship </i> <mark> Jan 2020 - Feb 2020</mark> </b></li>
-        <p>
-        Built a prototype of a medical sleeve using smart textile and gyroscope sensors connected to Arduino. Created a Windows Forms application that interfaces with Arduino via COM ports to monitor the gyroscope readings
-        </p>
-        <li><b>AirTies Wireless Networks, <i>Software Engineer Internship</i> <mark> July 2019 - Aug 2019</mark> </b></li>
-        <p>
-        Developed a software for access point devices to perform network traffic analysis using C and JavaScript. Implemented the access point interface (that fetches real-time data) for web browsers. Wrote bash-scripts to gather and store data on a cloud database, using the Linux OS. Learned the TCP/IP and HTTP protocols to implement a private messaging program. Conducted experiments to maximize data throughput of access point devices with Python, achieved 30% improvement.
-        </p>
-      </ul>
-
-      <h3>Education</h3>
-      <ul>
-        <li><b>Technical University of Munich, <i>Computer Science M.Sc.</i> <mark> Oct 2021 - Apr 2025</mark> </b></li>
-        <p>
-          While studying at TUM, I got involved in multiple courses and topics that would focus on distributed systems, cloud computing, and systems programming. My master's thesis focus is on improving the BtrBlocks interoperability with on-demand translation. BtrBlocks is an efficient columnar compression for data lakes, and my ongoing work focuses on creating Rust bindings and implementing the BtrBlocks compression into other projects like apache datafusion.
-        </p>
-        <li><b>Dokuz Eylül University, <i>Computer Engineering B.Sc.</i> <mark> Sep 2016 - Oct 2020</mark> </b></li>
-        <p>
-        DEU is the place where I met with many software development topics, such as algorithms, algorithm analysis, data structures, object oriented programming, network systems, operating systems and many more. During my time there, I have been involved in 3 individual internships where I have had my first real time software development experiences. My senior project is called <a href="https://github.com/omothm/torch-api">Torch</a> where we developed multiple machine learning models that focuces on helping visually imparied people on day to day tasks. The models were also exposed as a service over an HTTP api and the project was awarded with the special award of Senior Projects / Open Source Software Category by <a href="https://gbyf.org.tr/">BMO</a>.
-        </p>
-      </ul>
+      <li><b> Trader - A Cryptocurrency Trader Bot</b></li>
+      <p>
+        Trader is a real-time cryptocurrency trader bot. It constantly looks
+        up certain indicators and buys / sells cryptocurrencies accordingly.
+        It also implements a Python wrapper for some of the important Binance
+        Rest API endpoints. It is an open-source project and the repository
+        can be accessed at
+        <a href="https://github.com/emrebicer/trader" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </ul>
 
 
-      <h3>Social Links</h3>
-      <div class="grid">
-        <div>
-          <a
-            class="tooltipped"
-            data-position="bottom"
-            data-tooltip="E-mail"
-            href="mailto:oebicer@gmail.com"
-          >
-            <i class="fa fa-envelope"></i
-            ><span style="margin-left: 12px">oebicer@gmail.com</span>
-          </a>
-        </div>
-        <div>
-          <a
-            class="tooltipped"
-            data-position="bottom"
-            data-tooltip="GitHub"
-            href="http://github.com/emrebicer"
-            target="_blank"
-          >
-            <i class="fa fa-github"></i>
-            <span style="margin-left: 8px">emrebicer</span>
-          </a>
-        </div>
-        <div>
-          <a
-            class="tooltipped"
-            data-position="bottom"
-            data-tooltip="LinkedIn"
-            href="http://linkedin.com/in/biceremre"
-            target="_blank"
-          >
-            <i class="fa fa-linkedin"></i>
-            <span style="margin-left: 8px">biceremre</span>
-          </a>
-        </div>
+
+    <h3>Social Links</h3>
+    <div class="grid">
+      <div>
+        <a class="tooltipped" data-position="bottom" data-tooltip="E-mail" href="mailto:oebicer@gmail.com">
+          <i class="fa fa-envelope"></i><span style="margin-left: 12px">oebicer@gmail.com</span>
+        </a>
       </div>
-    </main>
+      <div>
+        <a class="tooltipped" data-position="bottom" data-tooltip="GitHub" href="http://github.com/emrebicer"
+          target="_blank">
+          <i class="fa fa-github"></i>
+          <span style="margin-left: 8px">emrebicer</span>
+        </a>
+      </div>
+      <div>
+        <a class="tooltipped" data-position="bottom" data-tooltip="LinkedIn" href="http://linkedin.com/in/biceremre"
+          target="_blank">
+          <i class="fa fa-linkedin"></i>
+          <span style="margin-left: 8px">biceremre</span>
+        </a>
+      </div>
+    </div>
+  </main>
 
-    <script></script>
-  </body>
+  <script></script>
+</body>
+
 </html>
